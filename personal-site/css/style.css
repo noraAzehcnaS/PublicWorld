@@ -12,6 +12,7 @@ h1{
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 0;
 }
 
 h3{
@@ -21,14 +22,15 @@ h3{
 }
 
 img {
-    height: 160px;
-    height: 160x;
+    max-width:100%;
+    border-radius: 20%;
 }
 
 .left-menu {
-    margin-left: 1%;
+    margin-left: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .left-menu h3
@@ -39,9 +41,10 @@ img {
 }
 
 .right-menu{
-    margin-left: 3%;
+    margin-left: 40px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .right-menu h3
@@ -49,4 +52,29 @@ img {
     background-color:darkblue;
     color:aliceblue;
     text-align: center;
+}
+
+.container{
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+#public-picture{
+    max-width: 160px;
+    min-width: 100px;
+}
+
+#public-text{
+    flex: auto;
+}
+    
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
