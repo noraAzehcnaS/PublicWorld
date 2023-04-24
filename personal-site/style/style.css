@@ -29,14 +29,6 @@ h3{
     gap: 40px;
 }
 
-#page-footer{
-    flex: auto;
-}
-
-#page-footer footer{
-    margin-top: 100%;
-}
-
 .public-container{
     justify-content: flex-start;
     margin-top: 20px;
