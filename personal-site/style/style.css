@@ -3,12 +3,12 @@ html{
     font-family: 'Chivo Mono', monospace;
 }
 body{
-    background-color: blanchedalmond;
+    background-color: #041b15;
+    color: antiquewhite;
 }
 
 h1{
-    background-color: white;
-    color:darkblue;
+    background-color: #832232;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -16,42 +16,14 @@ h1{
 }
 
 h3{
-    background-color: black;
-    color:aliceblue;
+    background-color: #f8c630;
+    color:black;
     text-align: center;
 }
 
 img {
     max-width:100%;
     border-radius: 20%;
-}
-
-.left-menu {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.left-menu h3
-{
-    background-color:darkmagenta;
-    color:aliceblue;
-    text-align: center;
-}
-
-.right-menu{
-    margin-left: 40px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.right-menu h3
-{
-    background-color:darkblue;
-    color:aliceblue;
-    text-align: center;
 }
 
 .container{
