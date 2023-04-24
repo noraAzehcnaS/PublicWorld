@@ -50,15 +50,15 @@ h3{
 .grid-menu-container{
     display:grid;
     grid-template-columns: minmax(100px,35vw) minmax(100px,35vw);
-    gap: 15px;
 }
+
 .grid-menu-item{
     aspect-ratio: 1/1;
-    object-fit: cover;
 }
 
 .grid-menu-container img{
     height: 100%;
+    display: block;
 }
     
 @media(max-width: 600px){
