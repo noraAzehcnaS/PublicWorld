@@ -32,11 +32,13 @@ h3{
 .public-container{
     justify-content: flex-start;
     margin-top: 20px;
-    margin-left: 20px;
     display: flex;
     gap: 24px;
 }
 
+#page-footer{
+    margin-top: auto;
+}
 .public-container img{
     max-width: 160px;
     min-width: 100px;

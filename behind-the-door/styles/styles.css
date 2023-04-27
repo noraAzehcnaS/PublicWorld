@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --raisin-black: #1A202C;
+    --thulian-pink:#E56399;
+    --asparagus:#60A561;
+    --white-smoke:#F6F4F3;
+    --xanthous:#F7B32B;
+}
+
+body{
+    background-color: var(--raisin-black);
+    min-height: 100vh;
+  }
+
+.navbar{
+    background-color: var(--xanthous);
+    font-family: 'Kanit', sans-serif;
+    font-size: medium; 
+}
+
+.navbar-brand{
+    font-family: 'Shadows Into Light';
+    font-size: xx-large;
+    color: var(--raisin-black);
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.card{
+    background-color: black;
+    color: var(--white-smoke);
+}
+.card-header{
+    background-color: var(--thulian-pink);
+}
+
+.public-container img{
+    max-width: 160px;
+    min-width: 100px;
+    border-radius: 20%;
+}
+
+#public-text{
+    flex: auto;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+
+.public-container{
+    justify-content: flex-start;
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+}
