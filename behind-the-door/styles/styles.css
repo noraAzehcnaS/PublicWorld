@@ -26,16 +26,34 @@ body{
 }
 
 .me-arrow{
-    max-width: 20vw;
+    max-width: 100%;
 }
 
 .meme{
-    max-width: 40vw;
+    max-width: 100%;
     border-radius: 10%;
 }
 
 .me-text{
     font-family: 'Shadows Into Light';
-    font-size: 15vw;
+    font-size: 10vw;
     color: var(--xanthous);
+}
+
+.hi-text{
+    font-family: 'Shadows Into Light';
+    color: var(--xanthous);
+}
+
+
+
+.about-me-text{
+    font-family: 'Kanit', sans-serif;
+    color: var(--white-smoke);
+}
+
+.about-me-text span{
+    font-size: large;
+    font-family: 'Shadows Into Light';
+    color: var(--asparagus);
 }
