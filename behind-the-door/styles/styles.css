@@ -32,6 +32,8 @@ body{
 .meme{
     max-width: 100%;
     border-radius: 10%;
+    border-color: var(--xanthous);
+    border-style: solid;
 }
 
 .me-text{
