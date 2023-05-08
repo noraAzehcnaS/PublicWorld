@@ -15,7 +15,12 @@ img{
 body{
     background-color: var(--raisin-black);
     min-height: 100vh;
-  }
+}
+
+.card{
+    background-color: var(--xanthous);
+    font-family: 'Kanit', sans-serif;
+}
 
 .navbar{
     background-color: var(--xanthous);
