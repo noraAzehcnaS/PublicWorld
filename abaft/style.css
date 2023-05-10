@@ -12,12 +12,14 @@
     z-index: -1;
 }
 
+.d-flex{
+    position: relative;
+}
+
 .quote-container {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     position: absolute;
+    height: 50%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
