@@ -2,7 +2,7 @@
     --road-white: #ebeff2;
 }
 
-.background-image{
+.bg-img{
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -11,6 +11,20 @@
     left: 0;
     z-index: -1;
 }
+
+.quote-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--road-white);
+}
+
 
 nav{
     font-family: 'Roboto', sans-serif;
