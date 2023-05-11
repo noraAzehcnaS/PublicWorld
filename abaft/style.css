@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth; 
 } 
 
+.single-page {
+    font-family: 'Roboto', sans-serif;
+    color: var(--road-white);
+}
 nav {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
@@ -23,7 +27,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 .home-img {
@@ -41,19 +45,16 @@ img {
     width: 50%;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 2vmax;
-    color: var(--road-white);
 }
 
 #education-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
     height: 70vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 .education-img {
@@ -66,21 +67,25 @@ img {
 
 .education-text-container{
     display: flex;
-    flex-direction: column;
-    text-align: end;
     position: absolute;
-    height: 50%;
-    width: 50%;
-    font-family: 'Roboto', sans-serif;
-    color: var(--road-white);
-    justify-self: end;
+    margin-bottom: -5vmax;
+    margin-left: 4%;
 }
+
+.education-text-container h1{ font-size: 7vmax;}
 
 #education-skills-container{
     display: flex;
     height: 30vh;
-    width: 100vh;
+    width: 100vw;
     background-color: var(--road-green);
+}
+
+.education-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vmax;
+    margin-left: 4%;
 }
 
 #work-container{
@@ -88,7 +93,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 #passion-container{
@@ -96,7 +101,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 #past-container{
@@ -104,7 +109,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 #future-container{
@@ -112,5 +117,5 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
