@@ -2,7 +2,11 @@
     --road-white: #ebeff2;
 }
 
-.bg-img{
+html { 
+    scroll-behavior: smooth; 
+} 
+
+.bg-img {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -12,8 +16,17 @@
     z-index: -1;
 }
 
-.d-flex{
+.d-flex {
     position: relative;
+}
+
+.education-container{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--road-white);
+    padding-right: 15vw;
 }
 
 .quote-container {
@@ -28,7 +41,7 @@
 }
 
 
-nav{
+nav {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     color: var(--road-white);
