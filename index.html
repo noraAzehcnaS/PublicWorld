@@ -18,9 +18,9 @@
 
     <title>Abaft</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#transparent-navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav id="transparent-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><h1>ABAFT</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,43 +29,73 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end pe-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#home-container">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="#education-container">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work-container">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Passions</a>
+                <a class="nav-link" href="#passion-container">Passions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Past</a>
+                <a class="nav-link" href="#past-container">Past</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Future</a>
+                <a class="nav-link" href="#future-container">Future</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    <div class="d-flex align-items-center justify-content-center">
-        <img class="bg-img" src="abaft/my-road.jpg">
-        <div class="quote-container d-flex justify-content-center align-items-center">
+    <div id="home-container">
+        <img class="home-img" src="abaft/my-road.jpg">
+        <div class="quote-container">
             <p>"The only real mistake is the one from which we learn nothing." <br> - Henry Ford</p>
         </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-end">
-        <img class="bg-img" src="abaft/aarhus-universitet.jpg">
-        <div class="education-container d-flex flex-column align-items-end">
+    <div id="education-container">
+        <img class="education-img" src="abaft/aarhus-universitet.jpg">
+        <div class="education-text-container">
           <h1>Education</h1>
-          <h2>Bachelors in Electronic Engineering</h2>
-          
+          <h3>Bachelors in Electronic Engineering</h3>
         </div>
     </div>
+    <div id="education-skills-container"></div>
+
+  <div id="work-container">
+    <img class="home-img" src="abaft/my-road.jpg">
+    <div class="quote-container">
+        <p>"The only real mistake is the one from which we learn nothing." <br> - Henry Ford</p>
+    </div>
+  </div>
+
+  <div id="passion-container">
+    <img class="home-img" src="abaft/my-road.jpg">
+    <div class="quote-container">
+        <p>"The only real mistake is the one from which we learn nothing." <br> - Henry Ford</p>
+    </div>
+  </div>
+
+  <div id="past-container">
+    <img class="home-img" src="abaft/my-road.jpg">
+    <div class="quote-container">
+        <p>"The only real mistake is the one from which we learn nothing." <br> - Henry Ford</p>
+    </div>
+  </div>
+
+  <div id="future-container">
+    <img class="home-img" src="abaft/my-road.jpg">
+    <div class="quote-container">
+        <p>"The only real mistake is the one from which we learn nothing." <br> - Henry Ford</p>
+    </div>
+  </div>
+
+
 
 </body>
 </html>

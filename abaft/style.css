@@ -1,14 +1,32 @@
 :root {
     --road-white: #ebeff2;
+    --road-green: #2f3527;
 }
 
 html { 
     scroll-behavior: smooth; 
 } 
 
-.bg-img {
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: var(--road-white);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100vh;
+}
+
+.home-img {
     object-fit: cover;
     filter: brightness(0.6);
     top: 0;
@@ -16,33 +34,83 @@ html {
     z-index: -1;
 }
 
-.d-flex {
-    position: relative;
-}
-
-.education-container{
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    font-family: 'Roboto', sans-serif;
-    color: var(--road-white);
-    padding-right: 15vw;
-}
-
 .quote-container {
+    display: flex;
     position: absolute;
     height: 50%;
     width: 50%;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2vmax;
     color: var(--road-white);
 }
 
+#education-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vh;
+}
 
-nav {
+.education-img {
+    object-fit: cover;
+    filter: brightness(0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.education-text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    position: absolute;
+    height: 50%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
     color: var(--road-white);
+    justify-self: end;
+}
+
+#education-skills-container{
+    display: flex;
+    height: 30vh;
+    width: 100vh;
+    background-color: var(--road-green);
+}
+
+#work-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+#passion-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+#past-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+#future-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
 }
