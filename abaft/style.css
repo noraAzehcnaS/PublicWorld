@@ -3,18 +3,31 @@
     --road-green: #2f3527;
 }
 
-html { 
-    scroll-behavior: smooth; 
-} 
-
-.single-page {
-    font-family: 'Roboto', sans-serif;
-    color: var(--road-white);
-}
 nav {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     color: var(--road-white);
+}
+
+.single-page {
+    font-family: 'Roboto', sans-serif;
+    color: var(--road-white);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.single-page::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-area{
+    scroll-snap-align: start;
 }
 
 .bg-img {
@@ -137,4 +150,10 @@ nav {
     align-items: center;
     justify-content: center;
     height: 100svh;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .bg-img-container::before{
+      background-attachment: scroll;
+    }
 }
