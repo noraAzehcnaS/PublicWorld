@@ -27,11 +27,32 @@ nav {
     z-index: -1;
 }
 
-#home-container{
+.bg-img-container{
     display: flex;
+}
+
+.bg-img-container::before{
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+}
+
+#home-container{
     align-items: center;
     justify-content: center;
     height: 100svh;
+}
+
+#home-container::before{
+    background-image: url("my-road.jpg");
 }
 
 .quote-container {
@@ -44,12 +65,15 @@ nav {
     font-style: italic;
     font-weight: bold;
     font-size: 2vmax;
+    text-align: center;
 }
 
 #education-container{
-    display: flex;
     align-items: end;
     height: 70svh;
+}
+#education-container::before{
+    background-image: url("aarhus-universitet.jpg");
 }
 
 .education-text-container{
@@ -67,7 +91,7 @@ nav {
     background-color: var(--road-green);
 }
 
-.education-text{
+#education-text{
     display: flex;
     flex-direction: column;
     margin-top: 6vmax;
@@ -75,10 +99,11 @@ nav {
 }
 
 #work-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 70svh;
+}
+
+#work-container::before{
+    background-image: url("denmark.png");
 }
 
 #work-experience-container{
