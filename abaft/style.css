@@ -1,155 +1,136 @@
 :root {
-    --road-white: #ebeff2;
-    --road-green: #2f3527;
+  --road-white: #ebeff2;
+  --road-green: #2f3527;
+  --road-blue: #5282c8;
 }
 
 nav {
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    color: var(--road-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: var(--road-white);
 }
 
 .single-page {
-    font-family: 'Roboto', sans-serif;
-    color: var(--road-white);
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
+  font-family: "Roboto", sans-serif;
+  color: var(--road-white);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .single-page::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.scroll-area{
-    scroll-snap-align: start;
+.scroll-area {
+  scroll-snap-align: start;
 }
 
-.bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-    top: 0;
-    left: 0;
-    z-index: -1;
+.bg-img-container {
+  display: flex;
 }
 
-.bg-img-container{
-    display: flex;
+.bg-img-container::before {
+  content: "";
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+  width: 100%;
+  height: 100%;
 }
 
-.bg-img-container::before{
-    content: "";
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.6);
-    width: 100%;
-    height: 100%;
+#home-container {
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
 }
 
-#home-container{
-    align-items: center;
-    justify-content: center;
-    height: 100svh;
-}
-
-#home-container::before{
-    background-image: url("my-road.jpg");
+#home-container::before {
+  background-image: url("my-road.jpg");
 }
 
 .quote-container {
-    display: flex;
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2vmax;
-    text-align: center;
+  display: flex;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2vmax;
+  text-align: center;
 }
 
-#education-container{
-    align-items: end;
-    height: 70svh;
+#education-container {
+  align-items: end;
+  height: 70svh;
 }
-#education-container::before{
-    background-image: url("aarhus-universitet.jpg");
-}
-
-.education-text-container{
-    display: flex;
-    position: absolute;
-    margin-bottom: -5vmax;
-    margin-left: 4%;
+#education-container::before {
+  background-image: url("aarhus-universitet.jpg");
 }
 
-.education-text-container h1{ font-size: 7vmax;}
-
-#education-green-container{
-    display: flex;
-    height: 30svh;
-    background-color: var(--road-green);
+.title-text-container {
+  display: flex;
+  position: absolute;
+  margin-bottom: -5vmax;
+  margin-left: 4%;
 }
 
-#education-text{
-    display: flex;
-    flex-direction: column;
-    margin-top: 6vmax;
-    margin-left: 4%;
+.title-text-container h1 {
+  font-size: 7vmax;
 }
 
-#work-container{
-    height: 70svh;
+#education-green-container {
+  display: flex;
+  height: 30svh;
+  background-color: var(--road-green);
 }
 
-#work-container::before{
-    background-image: url("denmark.png");
+#education-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vmax;
+  margin-left: 4%;
 }
 
-#work-experience-container{
-    display: flex;
-    height: 30svh;
-    background-color: rgb(82, 130, 201);
-    justify-content: center;
-    align-items: center;
+#work-container {
+  align-items: end;
+  height: 70svh;
 }
 
-#passion-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100svh;
+#work-container::before {
+  background-image: url("denmark.png");
 }
 
-#past-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100svh;
+#work-blue-container {
+  height: 30svh;
+  justify-content: center;
+  align-items: center;
 }
 
-#future-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100svh;
+#work-blue-container::before {
+  background-color: var(--road-blue);
+  filter: brightness(1);
+}
+
+.work-exp-container{
+  justify-content: space-between;
+  position: absolute;
 }
 
 @media only screen and (max-device-width: 1366px) {
-    .bg-img-container::before{
-      background-attachment: scroll;
-    }
+  .bg-img-container::before {
+    background-attachment: scroll;
+  }
 }

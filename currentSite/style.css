@@ -1,0 +1,114 @@
+:root {
+  --vs-black: #121212;
+}
+
+body {
+  /* Hides scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: var(--vs-black);
+  color: white;
+  font-family: "Sono", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-img-container {
+  display: flex;
+}
+
+.bg-img-container::before {
+  content: "";
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#top-container {
+  height: 40svh;
+  align-items: end;
+  justify-content: center;
+}
+
+#top-container::before {
+  background-image: url("my-road.jpg");
+}
+
+#work-container {
+  height: 40svh;
+}
+
+#work-container::before {
+  background-image: url("denmark.png");
+}
+
+#education-container {
+  height: 60svh;
+}
+
+#education-container::before {
+  background-image: url("aarhus-universitet.jpg");
+}
+
+#profile-picture-container {
+  display: block;
+  position: absolute;
+  width: 30vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-bottom: -15vh;
+  background-image: url("me-color.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y: 10%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction-container {
+  margin-top: 18vh;
+}
+
+#introduction-container h2 {
+  font-family: "Sono", sans-serif;
+}
+
+#introduction-container h3 {
+  font-family: "Quicksand", sans-serif;
+  font-style: bold;
+  font-size: larger;
+  font-style: italic;
+}
+
+.content-container {
+  margin-top: 5%;
+}
+
+.text-row{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+/* useful 
+  border-color: blue;
+  border-style: solid;
+   */
