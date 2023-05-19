@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 #profile-picture-container {
   display: block;
   position: absolute;
-  width: 30vh;
+  width: 30vmax;
   aspect-ratio: 1/1;
   border-radius: 50%;
   margin-bottom: -15vh;
