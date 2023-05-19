@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
   min-width: 15vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  margin-bottom: -15vh;
+  margin-bottom: min(-15vh,-8vw);
   background-image: url("me-color.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 #introduction-container {
-  margin-top: 21vh;
+  margin-top: max(21vh,12vw);;
 }
 
 #introduction-container h3 {
