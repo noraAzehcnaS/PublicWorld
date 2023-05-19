@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 
 #top-container::before {
   background-image: url("aros.jpg");
-  background-position-y: -360px;
+  background-position-y: -36vmax;
 }
 
 #education-container {
