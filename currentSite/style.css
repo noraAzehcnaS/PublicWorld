@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 #top-container {
-  height: 40svh;
+  height: max(200px,45vh);
   align-items: end;
   justify-content: center;
 }
@@ -44,14 +44,25 @@ body::-webkit-scrollbar {
   background-position-y: -40vmax;
 }
 
-#education-container {
-  height: 40svh;
+#bottom-container {
+  height: max(200px,45vh);
+  align-items: center;
+  justify-content: center;
 }
 
-#education-container::before {
-  background-image: url("aarhus-universitet.jpg");
-  background-size: auto 90vmax;
-  background-position-y: 16vmax;
+#bottom-container::before {
+  background-image: url("iceberg.jpg");
+}
+
+#introduction-container {
+  margin-top: max(21vh, 12vw);
+}
+
+#introduction-container h3 {
+  font-family: "Sono", sans-serif;
+  font-style: bold;
+  font-size: larger;
+  font-style: italic;
 }
 
 #profile-picture-container {
@@ -61,7 +72,7 @@ body::-webkit-scrollbar {
   min-width: 15vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  margin-bottom: min(-15vh,-8vw);
+  margin-bottom: min(-15vh, -8vw);
   background-image: url("me-color.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,22 +87,6 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-#introduction-container {
-  margin-top: max(21vh,12vw);;
-}
-
-#introduction-container h3 {
-  font-family: "Sono", sans-serif;
-  font-style: bold;
-  font-size: larger;
-  font-style: italic;
-}
-
-#about-me-container {
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
 .text-row {
   font-family: "Sono", sans-serif;
   text-align: justify;
@@ -101,6 +96,41 @@ body::-webkit-scrollbar {
   margin-top: 5%;
 }
 
+#about-me-container {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+#education-container {
+  height: max(200px,45vh);
+  align-items: end;
+}
+
+#education-container::before {
+  background-image: url("aarhus-universitet.jpg");
+  background-size: auto 90vmax;
+}
+
+#education-container h1{
+  position: absolute;
+  padding: 1%;
+  margin: 0;
+  background-color: #02535c;
+}
+
+#education-text-container {
+  margin-top: 3%;
+}
+
+#education-text-container h2{
+  font-family: "Quicksand", sans-serif;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .bg-img-container::before {
+    background-attachment: scroll;
+  }
+}
 /* useful 
   border-color: blue;
   border-style: solid;
