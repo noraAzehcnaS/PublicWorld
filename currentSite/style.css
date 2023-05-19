@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
 
 #education-container::before {
   background-image: url("aarhus-universitet.jpg");
+  background-size: auto 90vmax;
   background-position-y: 16vmax;
 }
 
@@ -87,8 +88,8 @@ body::-webkit-scrollbar {
 }
 
 #about-me-container {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
 .text-row {
