@@ -79,61 +79,156 @@
     </div>
     <div class="flex-column">
       <div class="container">
-        <div class="row text-row">
+        <div class="row card-row">
           <div class="col col-md-9 col-lg-6">
-            <h2>Bachelors in Electronic Engineering</h2>
-            <a href="https://bachelor.au.dk/elektro">
-              <p>Aarhus University</p>
-            </a>
+            <div class="card education-card">
+              <div class="card-header">
+                <h2>Bachelors in Electronic Engineering</h2>
+                <ul
+                  class="nav nav-tabs card-header-tabs"
+                  data-bs-tabs="bachelor-tabs"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="true"
+                      data-bs-toggle="tab"
+                      href="#bachelor-about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#bachelor-aquired-skills"
+                      >Aquired Skills</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#bachelor-interests"
+                      >Interests</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane active" id="bachelor-about">
+                  <div class="card-text">
+                    I finished my bachelors at
+                    <a href="https://bachelor.au.dk/elektro" target="_blank">
+                      Aarhus University</a
+                    >
+                    in <b>2021</b>. I graduated with a bachelors project
+                    involving the remote control of a truck.
+                  </div>
+                </div>
+                <div class="tab-pane" id="bachelor-aquired-skills">
+                  <div class="card-text">
+                    <ul>
+                      <li>Digital Signal Analysis and Processing</li>
+                      <li>Microcontroller Systems</li>
+                      <li>App Development (only Android Studio at the time)</li>
+                      <li>Communication Protocols (I2C,CAN,SPI,USB)</li>
+                      <li>Machine Learning</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="bachelor-interests">
+                  <div class="card-text">
+                    <ul>
+                      <li>Digital Signal Analysis and Processing</li>
+                      <li>Microcontroller Systems</li>
+                      <li>App Development (only Android Studio at the time)</li>
+                      <li>Communication Protocols (I2C,CAN,SPI,USB)</li>
+                      <li>Machine Learning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row text-row">
+        <div class="row card-row">
           <div class="col col-md-9 col-lg-6">
-            <p>
-              I finished my bachelors in <b>2021</b>. I graduated with a
-              bachelors project involving the remote control of a truck. In my
-              final semester it became clear to me, what fields I was most
-              passionate about:
-            </p>
-          </div>
-        </div>
-        <div class="row text-row">
-          <div class="col col-md-9 col-lg-6">
-            <ul>
-              <li>Digital Signal Analysis and Processing</li>
-              <li>Microcontroller Systems</li>
-              <li>App Development (only Android Studio at the time)</li>
-              <li>Communication Protocols (I2C,CAN,SPI,USB)</li>
-              <li>Machine Learning</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row text-row">
-          <div class="col col-md-9 col-lg-6">
-            <h2>The Complete 2023 Web Development Bootcamp <b>(Current)</b></h2>
-            <a
-              href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
-            >
-              <p>Details</p>
-            </a>
-          </div>
-        </div>
-        <div class="row text-row">
-          <div class="col col-md-9 col-lg-6">
-            <p>
-              I'm currently enrolled in a Web Development Course to help me get
-              started with higher language programming. I am experienced in
-              embedded programming (C, C++, Python), but would like to practice
-              higher abstraction programming.
-            </p>
-          </div>
-        </div>
-        <div class="row text-row">
-          <div class="col col-md-9 col-lg-6">
-            <p>
-              This site was created as part of the course using HTML CSS anc
-              Javascript.
-            </p>
+            <div class="card education-card">
+              <div class="card-header">
+                <h2>Web Development Bootcamp</h2>
+                <ul
+                  class="nav nav-tabs card-header-tabs"
+                  data-bs-tabs="bootcamp-tabs"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="true"
+                      data-bs-toggle="tab"
+                      href="#bootcamp-about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#bootcamp-aquired-skills"
+                      >Aquired Skills</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#bootcamp-interests"
+                      >Interests</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane active" id="bootcamp-about">
+                  <div class="card-text">
+                    I'm currently enrolled in a
+                    <a
+                      href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                      target="_blank"
+                    >
+                      Web Development Course</a
+                    >
+                    to help me get started with higher language programming. I
+                    am experienced in embedded programming (C, C++, Python), but
+                    would like to practice higher abstraction programming.<br />
+                    This site was created as part of the course using HTML CSS
+                    anc Javascript.
+                  </div>
+                </div>
+                <div class="tab-pane" id="bootcamp-aquired-skills">
+                  <div class="card-text">
+                    <ul>
+                      <li>Digital Signal Analysis and Processing</li>
+                      <li>Microcontroller Systems</li>
+                      <li>App Development (only Android Studio at the time)</li>
+                      <li>Communication Protocols (I2C,CAN,SPI,USB)</li>
+                      <li>Machine Learning</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="bootcamp-interests">
+                  <div class="card-text">
+                    <ul>
+                      <li>Digital Signal Analysis and Processing</li>
+                      <li>Microcontroller Systems</li>
+                      <li>App Development (only Android Studio at the time)</li>
+                      <li>Communication Protocols (I2C,CAN,SPI,USB)</li>
+                      <li>Machine Learning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -218,10 +313,12 @@
                 Designing <b>digital filters</b> for the cranes accelerometers.
               </li>
               <li>
-                Designed my own sorting algorithm for the company's generic error handling system.
+                Designed my own sorting algorithm for the company's generic
+                error handling system.
               </li>
               <li>
-                Developed a company specific protocol layer built on top of the <b>CAN-Open protocol</b>.
+                Developed a company specific protocol layer built on top of the
+                <b>CAN-Open protocol</b>.
               </li>
             </ul>
           </div>
