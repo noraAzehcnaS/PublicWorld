@@ -61,34 +61,27 @@ a:visited {
 
 .card{
   border-color: var(--highlight-blue);
-  background-color: transparent;
+  background-size: 100% auto;
   color: white;
 }
+
 .card h2{
+  backdrop-filter: brightness(0.4);
   margin-bottom: 4%;
 }
 
-.education-card .card-header{
-  background-image: url("seashore.jpg");
-  background-size: 100% auto;
-  background-position: top;
-}
-
-.education-card .card-header{
-  background-image: url("seashore.jpg");
-  background-size: 100% auto;
-  background-position: top;
-}
-
-.work-card .card-header{
-  background-image: url("my-road.jpg");
+.card-body{
   backdrop-filter: brightness(20%);
-  background-size: 100% auto;
-  background-position: center;
 }
 
-.work-card .card-header h2{
-  backdrop-filter: brightness(0.4);
+.education-card{
+  background-image: url("seashore.jpg");
+  background-position: top;
+}
+
+.work-card{
+  background-image: url("my-road.jpg");
+  background-position: bottom;
 }
 
 #top-container {
