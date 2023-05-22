@@ -1,6 +1,7 @@
 :root {
   --vs-black: #081a1c;
   --highlight-blue: #02535c;
+  --highlight-blue-light: #0cb5c8;
 }
 
 body {
@@ -14,6 +15,17 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+a:link {
+  color: var(--highlight-blue-light);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--highlight-blue-light);
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .bg-img-container {
@@ -35,7 +47,7 @@ body::-webkit-scrollbar {
 
 .nav-tabs .nav-item.show, .nav-tabs .nav-link.active {
   background: transparent;
-  backdrop-filter: blur(6px);
+  backdrop-filter: brightness(0.4);
   border-color: var(--highlight-blue);
   border-bottom: 2px solid;
   color: white;
@@ -49,7 +61,7 @@ body::-webkit-scrollbar {
 
 .card{
   border-color: var(--highlight-blue);
-  background-color: #081a1c;
+  background-color: transparent;
   color: white;
 }
 .card h2{
@@ -66,6 +78,17 @@ body::-webkit-scrollbar {
   background-image: url("seashore.jpg");
   background-size: 100% auto;
   background-position: top;
+}
+
+.work-card .card-header{
+  background-image: url("my-road.jpg");
+  backdrop-filter: brightness(20%);
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.work-card .card-header h2{
+  backdrop-filter: brightness(0.4);
 }
 
 #top-container {
