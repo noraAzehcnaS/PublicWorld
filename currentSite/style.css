@@ -55,6 +55,7 @@ a:visited {
 .nav-tabs .nav-item.show, .nav-tabs .nav-link.active {
   background: transparent;
   backdrop-filter: brightness(40%);
+  -webkit-backdrop-filter:brightness(40%);
   border-color: var(--highlight-blue);
   border-bottom: 2px solid;
   color: white;
