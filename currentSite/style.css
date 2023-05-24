@@ -32,6 +32,13 @@ a:visited {
   display: flex;
 }
 
+.bg-img-container h1{
+  position: absolute;
+  padding: 1%;
+  margin: 0;
+  background-color: var(--highlight-blue);
+}
+
 .bg-img-container::before {
   content: "";
   left: 0;
@@ -52,7 +59,6 @@ a:visited {
   border-bottom: 2px solid;
   color: white;
   font-weight: bold;
-  font-family: "Sono", sans-serif;
 }
 
 .nav-tabs .nav-link {
@@ -71,7 +77,7 @@ a:visited {
 }
 
 .card-body{
-  backdrop-filter: brightness(20%);
+  backdrop-filter: brightness(0.3);
 }
 
 .education-card{
@@ -81,7 +87,7 @@ a:visited {
 
 .work-card{
   background-image: url("my-road.jpg");
-  background-position: bottom;
+  background-position: top;
 }
 
 #top-container {
@@ -97,13 +103,15 @@ a:visited {
 }
 
 #bottom-container {
-  height: max(200px,45vh);
+  margin-top: 20%;
+  height: max(200px,35vh);
   align-items: center;
   justify-content: center;
 }
 
 #bottom-container::before {
-  background-image: url("iceberg.jpg");
+  background-image: url("seashore.jpg");
+  background-position: bottom;
 }
 
 #introduction-container {
@@ -159,7 +167,7 @@ a:visited {
 }
 
 #education-container {
-  height: max(200px,45vh);
+  height: max(200px,35vh);
   align-items: end;
 }
 
@@ -168,15 +176,8 @@ a:visited {
   background-size: auto 90vmax;
 }
 
-#education-container h1{
-  position: absolute;
-  padding: 1%;
-  margin: 0;
-  background-color: var(--highlight-blue);
-}
-
 #work-container {
-  height: max(200px,45vh);
+  height: max(200px,35vh);
   align-items: end;
   justify-content: end;
 }
@@ -184,13 +185,6 @@ a:visited {
 #work-container::before {
   background-image: url("iceberg.jpg");
   background-size: auto 90vmax;
-}
-
-#work-container h1{
-  position: absolute;
-  padding: 1%;
-  margin: 0;
-  background-color: #02535c;
 }
 
 @media only screen and (max-device-width: 1366px) {
