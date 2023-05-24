@@ -193,6 +193,9 @@ a:visited {
   .bg-img-container::before {
     background-attachment: scroll;
   }
+  .card{
+    background-size: cover;
+  }
 }
 /* useful 
   border-color: blue;
