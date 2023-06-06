@@ -68,29 +68,12 @@ a:visited {
 
 .card{
   border-color: var(--highlight-blue);
-  background-size: 100% auto;
+  background-color: transparent;
   color: white;
 }
 
 .card h2{
-  backdrop-filter: brightness(40%);
-  -webkit-backdrop-filter:brightness(40%);
   margin-bottom: 4%;
-}
-
-.card-body{
-  backdrop-filter: brightness(30%);
-  -webkit-backdrop-filter:brightness(30%);
-}
-
-.education-card{
-  background-image: url("seashore.jpg");
-  background-position: top;
-}
-
-.work-card{
-  background-image: url("my-road.jpg");
-  background-position: top;
 }
 
 #top-container {
